@@ -45,7 +45,7 @@ function generateInvoice(data) {
       igst,
       totalTax,
       totalAmount,
-      amountInWords: toWords(`${totalAmount} Rupess only.`),   
+      amountInWords: toWords(totalAmount),   
     };
 
     if (data.signaturePath) {
