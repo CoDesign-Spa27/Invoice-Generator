@@ -84,7 +84,7 @@ function InvoiceForm() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3001/generate-invoice",
+        "https://invoice-generator-7d0b.onrender.com/generate-invoice",
         invoiceData
       );
       setGeneratedInvoice(response.data.invoiceHtml);
